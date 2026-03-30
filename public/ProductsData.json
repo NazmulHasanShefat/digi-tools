@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited AI generations",
+      "2000+ templates",
+      "Grammar checker",
+      "Commercial license",
+      "Priority support"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "AI Image Creator",
+    "description": "Create stunning visuals, logos, and artwork instantly using powerful AI image generation.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "500 image generations/month",
+      "HD quality export",
+      "50+ art styles",
+      "Commercial license",
+      "No watermark"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "AI SEO Master",
+    "description": "Boost your website ranking with AI-powered keyword research and SEO content optimization.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited SEO audits",
+      "Keyword research tool",
+      "Competitor analysis",
+      "Auto meta tags",
+      "Monthly reports"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "AI Chat Assistant",
+    "description": "Deploy a smart AI chatbot on your website to handle customer queries 24/7 automatically.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited conversations",
+      "Multi-language support",
+      "Custom training data",
+      "Website integration",
+      "Analytics dashboard"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "AI Video Studio",
+    "description": "Transform scripts into professional videos with AI avatars, voiceovers, and auto subtitles.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "100 videos/month",
+      "AI avatar presenter",
+      "Auto subtitles",
+      "50+ video templates",
+      "1080p HD export"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "AI Code Helper",
+    "description": "Write, debug, and optimize code 10x faster with intelligent AI-powered coding assistance.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited code generation",
+      "30+ languages support",
+      "Bug detection & fix",
+      "Code explanation",
+      "VS Code extension"
+    ]
+  }
+]
