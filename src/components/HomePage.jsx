@@ -5,6 +5,8 @@ import RatingSection from './main/ratingsSection/RatingSection';
 import ToolsSection from './main/toolsSection/ToolsSection';
 import { UserContext } from '../context/UserContext';
 import { ToastContainer } from 'react-toastify';
+import GetStartSection from './main/GetStartSection/GetStartSection';
+import PricingSection from './main/pricingSection/PricingSection';
 
 const HomePage = () => {
     const [selectedProduct, setSelectedProduct] = useState([]);
@@ -17,6 +19,8 @@ const HomePage = () => {
             <RatingSection />
             <ToolsSection className={`max-w-[1200px] mx-auto`}/>
              <ToastContainer />
+             <GetStartSection className={`max-w-[1200px] mx-auto`} />
+             <PricingSection className={`max-w-[1200px] mx-auto`}/>
         </UserContext.Provider>
         </>
     );

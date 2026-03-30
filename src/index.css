@@ -3,8 +3,6 @@
 @plugin "daisyui";
 
 :root {
-  --linearColor1: #4F39F6;
-  --linearColor2: #9514FA;
   --BlueLightColor: #E1E7FF;
 }
 
@@ -12,4 +10,9 @@ body {
   font-family: "Manrope", sans-serif;
   background: #fff;
   color: black;
+}
+
+.default-bg {
+  background: #22C1C3;
+  background: linear-gradient(80deg, #4F39F6 0%, #9514FA 100%);
 }
