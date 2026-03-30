@@ -33,7 +33,7 @@ const ToolCard = ({ tool }) => {
           <img
             src={tool?.icon}
             alt={tool.name}
-            className="w-[30px] h-[30px] my-2"
+            className="w-7.5 h-7.5 my-2"
           />
           <h2 className="text-3xl font-bold">{tool.name}</h2>
           <div className="w-full my-3">{tool.description}</div>

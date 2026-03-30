@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { UserContext } from "../../../../context/UserContext";
+import { toast } from "react-toastify";
 
 const CartListItem = ({ item }) => {
   const { selectedProduct, setSelectedProduct, total, setTotal } = useContext(UserContext);
@@ -8,6 +9,7 @@ const CartListItem = ({ item }) => {
     setSelectedProduct(filterdItems);
     const subTotal = total - item.price;
     setTotal(subTotal);
+    toast.success("Product removed successfully")
   }
   return (
     <li className="list-row">

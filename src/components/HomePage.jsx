@@ -17,13 +17,13 @@ const HomePage = () => {
     return (
         <>
         <UserContext.Provider value={{ selectedProduct, setSelectedProduct, total, setTotal }}>
-            <Header className={`max-w-[1200px] mx-auto`}/>
-            <HeroSection className={`max-w-[1200px] mx-auto`}/>
+            <Header className={`max-w-300 mx-auto`}/>
+            <HeroSection className={`max-w-300 mx-auto`}/>
             <RatingSection />
-            <ToolsSection className={`max-w-[1200px] mx-auto`}/>
+            <ToolsSection className={`max-w-300 mx-auto`}/>
              <ToastContainer />
-             <GetStartSection className={`max-w-[1200px] mx-auto`} />
-             <PricingSection className={`max-w-[1200px] mx-auto`}/>
+             <GetStartSection className={`max-w-300 mx-auto`} />
+             <PricingSection className={`max-w-300 mx-auto`}/>
              <BottomBannar />
              <FooterSection />
              <FooterSecend />
