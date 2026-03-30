@@ -24,8 +24,7 @@ const PricingCard = ({ pricing, index }) => {
         <div>
           {" "}
           <span className="text-[48px] font-bold">
-            {pricing.price.currency}
-            {pricing.price.amount}{" "}
+            {pricing.price.currency} {pricing.price.amount}
           </span>{" "}
           <span className="text-[20px]">/{pricing.price.period}</span>
         </div>

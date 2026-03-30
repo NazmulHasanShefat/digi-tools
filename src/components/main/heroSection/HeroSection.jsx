@@ -20,7 +20,7 @@ const HeroSection = ({ className }) => {
               productivity software—all in one place. Start creating faster
               today. Explore Products
             </p>
-            <div className="flex items-center">
+            <div className="flex items-center flex-col lg:flex-row md:flex-row gap-3">
             <ButtonPrimary type="default" className={`ml-0`}>Explore Products</ButtonPrimary>
             <ButtonPrimary type="border"><span className="flex items-center gap-2"><span><PlayIcon /></span> <span>Watch Demo</span></span></ButtonPrimary>
             </div>

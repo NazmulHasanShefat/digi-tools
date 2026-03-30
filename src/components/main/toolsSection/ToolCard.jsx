@@ -22,7 +22,7 @@ const ToolCard = ({ tool }) => {
     }
   };
   return (
-    <div className="card w-96 shadow-sm hover:translate-y-1.5 transition-[translate] duration-300">
+    <div className="card shadow-sm hover:translate-y-1.5 transition-[translate] duration-300">
       <div className="card-body">
         <div className="w-full">
           <span className="badge badge-xs badge-warning bg-amber-400/30 float-end">

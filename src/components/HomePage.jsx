@@ -7,6 +7,9 @@ import { UserContext } from '../context/UserContext';
 import { ToastContainer } from 'react-toastify';
 import GetStartSection from './main/GetStartSection/GetStartSection';
 import PricingSection from './main/pricingSection/PricingSection';
+import BottomBannar from './main/BottomBannar/BottomBannar';
+import FooterSection from './main/featuresSection/FooterSection';
+import FooterSecend from './main/featuresSection/FooterSecend';
 
 const HomePage = () => {
     const [selectedProduct, setSelectedProduct] = useState([]);
@@ -21,6 +24,9 @@ const HomePage = () => {
              <ToastContainer />
              <GetStartSection className={`max-w-[1200px] mx-auto`} />
              <PricingSection className={`max-w-[1200px] mx-auto`}/>
+             <BottomBannar />
+             <FooterSection />
+             <FooterSecend />
         </UserContext.Provider>
         </>
     );
