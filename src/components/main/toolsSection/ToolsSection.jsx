@@ -47,7 +47,7 @@ const ToolsSection = ({ className }) => {
       </div>
 
       {currentTab === "products" ? (
-        <div className="productCards grid lg:grid-cols-3 md:grid-cols-2">
+        <div className="productCards grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center gap-10">
           <Suspense fallback={<h1>loding...</h1>}>
             <ToolsCards Product_data={Product_data} />
           </Suspense>

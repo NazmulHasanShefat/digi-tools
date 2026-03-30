@@ -1,21 +1,32 @@
 import React, { useContext, useState } from "react";
 import ButtonPrimary from "../../ui/ButtonPrimary";
 import { UserContext } from "../../../context/UserContext";
+import { toast } from "react-toastify";
 
 const ToolCard = ({ tool }) => {
-  const {selectedProduct, setSelectedProduct, setTotal } = useContext(UserContext);
+  const { selectedProduct, setSelectedProduct, setTotal } =
+    useContext(UserContext);
   const [selected, setSelected] = useState(false);
-  const addtoCart = ()=>{
-    const newProduct = [...selectedProduct, tool];
-    setSelectedProduct(newProduct);
-    setTotal((total)=> total + tool.price)
-  }
+  const addtoCart = () => {
+    const isExist = selectedProduct.find(
+      (selectedItem) => selectedItem.id === tool.id,
+    );
+    if (!isExist) {
+      const newProduct = [...selectedProduct, tool];
+      setSelectedProduct(newProduct);
+      setTotal((total) => total + tool.price);
+      toast.success("Product added to cart");
+    } else {
+      toast.error("same product alrady exist");
+      return;
+    }
+  };
   return (
     <div className="card w-96 shadow-sm hover:translate-y-1.5 transition-[translate] duration-300">
       <div className="card-body">
         <div className="w-full">
           <span className="badge badge-xs badge-warning bg-amber-400/30 float-end">
-           {tool.tag}
+            {tool.tag}
           </span>
         </div>
         <div className="flex flex-col items-left justify-between">
@@ -59,9 +70,17 @@ const ToolCard = ({ tool }) => {
           })}
         </ul>
         <div className="mt-6">
-         
-          <ButtonPrimary type={selected ? "border": "default"} className={`w-full`} onclickfn={()=>{addtoCart(); setSelected(true)}} isdisabled={selected ? true : false}>{selected ? "added to cart": "Buy now"}</ButtonPrimary>
-   
+          <ButtonPrimary
+            type={selected ? "border" : "default"}
+            className={`w-full`}
+            onclickfn={() => {
+              addtoCart();
+              setSelected(true);
+            }}
+            isdisabled={selected ? true : false}
+          >
+            {selected ? "added to cart" : "Buy now"}
+          </ButtonPrimary>
         </div>
       </div>
     </div>
