@@ -1,8 +1,8 @@
-import React from "react";
-import InstagramIcon from "../../ui/InstagramIcon";
-import FacebookIcon from "../../ui/FacebookIcon";
-import XIcon from "../../ui/XIcon";
-import LogoMain from "../../ui/LogoMain";
+import FacebookIcon from "../ui/FacebookIcon";
+import InstagramIcon from "../ui/InstagramIcon";
+import LogoMain from "../ui/LogoMain";
+import XIcon from "../ui/XIcon";
+
 
 const FooterSection = () => {
   return (

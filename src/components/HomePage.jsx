@@ -8,8 +8,9 @@ import { ToastContainer } from 'react-toastify';
 import GetStartSection from './main/GetStartSection/GetStartSection';
 import PricingSection from './main/pricingSection/PricingSection';
 import BottomBannar from './main/BottomBannar/BottomBannar';
-import FooterSection from './main/featuresSection/FooterSection';
-import FooterSecend from './main/featuresSection/FooterSecend';
+import FooterSection from './footer/FooterSection';
+import FooterSecend from './footer/FooterSecend';
+
 
 const HomePage = () => {
     const [selectedProduct, setSelectedProduct] = useState([]);
