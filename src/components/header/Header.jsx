@@ -12,7 +12,10 @@ const Header = ({ className }) => {
             <Menus />
             <div className='buttons flex justify-center items-center gap-3'>
                 <button type='button' className='cursor-pointer relative'><img src={cardIcon} width={20} height={20} alt="" />
-                 <span className='px-2 py-0.5 bg-red-500 text-sm absolute text-white top-[-16px] right-[-15px] rounded-full'>{selectedProduct.length}</span>
+                 { selectedProduct.length !== 0 ? 
+                 <span className='px-2 py-0.5 bg-red-500 text-sm absolute text-white top-[-16px] right-[-15px] rounded-full'>{selectedProduct.length}</span> :
+                 ""
+                 }
                 </button>
                 <button type='button' className='cursor-pointer'>login</button>
                 <ButtonPrimary type='default'>Get Started</ButtonPrimary>
