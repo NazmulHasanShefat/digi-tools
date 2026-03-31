@@ -31,7 +31,7 @@ const GetStartSection = ({ className }) => {
        
         <div className="steps_card p-5 shadow-md shadow-gray-300 rounded-lg hover:translate-y-2.5 transition-[translate] duration-200">
           <div className="stepCount default-bg w-max h-max px-2 py-1 float-end text-white rounded-full">
-            01
+            02
           </div>
           <div className="w-full flex justify-center items-center">
             <div className="rounded-full w-max h-max p-2 bg-purple-400/20">
@@ -46,7 +46,7 @@ const GetStartSection = ({ className }) => {
        
         <div className="steps_card p-5 shadow-md shadow-gray-300 rounded-lg hover:translate-y-2.5 transition-[translate] duration-200">
           <div className="stepCount default-bg w-max h-max px-2 py-1 float-end text-white rounded-full">
-            01
+            03
           </div>
           <div className="w-full flex justify-center items-center">
             <div className="rounded-full w-max h-max p-2 bg-purple-400/20">
