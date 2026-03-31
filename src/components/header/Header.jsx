@@ -18,7 +18,7 @@ const Header = ({ className }) => {
                  }
                 </button>
                 <button type='button' className='cursor-pointer'>login</button>
-                <ButtonPrimary type='default'>Get Started</ButtonPrimary>
+                <ButtonPrimary type='default' className={`mr-0`}>Get Started</ButtonPrimary>
             </div>
         </header>
     );
