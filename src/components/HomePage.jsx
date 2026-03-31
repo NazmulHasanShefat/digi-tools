@@ -18,7 +18,7 @@ const HomePage = () => {
         <>
         <UserContext.Provider value={{ selectedProduct, setSelectedProduct, total, setTotal }}>
             <Header className={`max-w-300 mx-auto`}/>
-            <HeroSection className={`max-w-300 mx-auto px-5 lg:px-0 md:px-0`}/>
+            <HeroSection className={`max-w-300 mx-auto`}/>
             <RatingSection />
             <ToolsSection className={`max-w-300 mx-auto px-5 lg:px-0 md:px-0`}/>
              <ToastContainer />

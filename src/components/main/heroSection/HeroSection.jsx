@@ -10,7 +10,7 @@ const HeroSection = ({ className }) => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src={banarImage}
-            className="max-w-xs"
+            className="w-full lg:max-w-xs"
           />
           <div>
             <div className="herotag bg-[#E1E7FF] w-max px-4 py-2 flex items-center justify-center gap-3 rounded-3xl text-xs">
