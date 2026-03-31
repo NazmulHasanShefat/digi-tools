@@ -3,8 +3,8 @@ import ButtonPrimary from "../../ui/ButtonPrimary";
 
 const BottomBannar = () => {
   return (
-    <section className="bottom_banner w-full default-bg py-30 text-white">
-      <h1 className="text-[48px] font-extrabold text-center">
+    <section className="bottom_banner w-full default-bg py-30 text-white px-5">
+      <h1 className="lg:text-[48px] text-[34px] font-extrabold text-center">
         Ready to Transform Your Workflow?
       </h1>
       <p className="text-center text-gray-200">

@@ -2,6 +2,7 @@ import React from "react";
 import ButtonPrimary from "../../ui/ButtonPrimary";
 import banarImage from "../../../assets/banner.png"
 import PlayIcon from "../../ui/PlayIcon";
+import CircleIcon from "../../ui/CircleIcon";
 const HeroSection = ({ className }) => {
   return (
     <section className={`hero_section ${className}`}>
@@ -12,6 +13,11 @@ const HeroSection = ({ className }) => {
             className="max-w-xs"
           />
           <div>
+            <div className="herotag bg-[#E1E7FF] w-max px-4 py-2 flex items-center justify-center gap-3 rounded-3xl text-xs">
+            <CircleIcon />
+              <p className="bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">New: AI-Powered Tools Available</p>
+            </div>
+        
             <h1 className="text-[12vw] lg:text-[72px] lg:leading-22 md:text-[72px] md:leading-22 font-extrabold">
               Supercharge Your Digital Workflow{" "}
             </h1>
