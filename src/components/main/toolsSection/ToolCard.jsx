@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import ButtonPrimary from "../../ui/ButtonPrimary";
 import { UserContext } from "../../../context/UserContext";
 import { toast } from "react-toastify";
@@ -6,11 +6,11 @@ import { toast } from "react-toastify";
 const ToolCard = ({ tool }) => {
   const { selectedProduct, setSelectedProduct, setTotal } =
     useContext(UserContext);
-  const [selected, setSelected] = useState(false);
+
+  const isExist = selectedProduct.find(
+    (selectedItem) => selectedItem.id === tool.id,
+  );
   const addtoCart = () => {
-    const isExist = selectedProduct.find(
-      (selectedItem) => selectedItem.id === tool.id,
-    );
     if (!isExist) {
       const newProduct = [...selectedProduct, tool];
       setSelectedProduct(newProduct);
@@ -71,15 +71,14 @@ const ToolCard = ({ tool }) => {
         </ul>
         <div className="mt-6">
           <ButtonPrimary
-            type={selected ? "border" : "default"}
+            type={isExist ? "border" : "default"}
             className={`w-full`}
             onclickfn={() => {
               addtoCart();
-              setSelected(true);
             }}
-            isdisabled={selected ? true : false}
+            isdisabled={isExist ? true : false}
           >
-            {selected ? "added to cart" : "Buy now"}
+            {isExist ? "added to cart" : "Buy now"}
           </ButtonPrimary>
         </div>
       </div>
